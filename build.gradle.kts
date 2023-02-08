@@ -12,6 +12,9 @@ configurations {
     compileOnly {
         extendsFrom(configurations.annotationProcessor.get())
     }
+//    all {
+//        exclude("org.springframework.boot:spring-boot-starter-logging")
+//    }
 }
 
 repositories {
@@ -20,7 +23,9 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.postgresql:postgresql:42.5.3")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
     compileOnly("org.projectlombok:lombok")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
