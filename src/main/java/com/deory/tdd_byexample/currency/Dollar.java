@@ -2,7 +2,7 @@ package com.deory.tdd_byexample.currency;
 
 public class Dollar {
     
-    int amount;
+    private int amount;
     
     Dollar(int amount) {
         this.amount = amount;
