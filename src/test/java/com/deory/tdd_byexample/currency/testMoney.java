@@ -2,7 +2,7 @@ package com.deory.tdd_byexample.currency;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class testMoney {
     
@@ -15,4 +15,10 @@ public class testMoney {
         assertEquals(15, product.amount);
     }
     
+    @Test
+    public void testEquals() {
+        assertTrue(new Dollar(5).equals(new Dollar(5)));
+        assertFalse(new Dollar(5).equals(new Dollar(6)));
+        
+    }
 }
