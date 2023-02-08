@@ -5,5 +5,7 @@ Money Test
 3. amount 를 private 으로 변경
 4. ~~Dollar 부작용(side effect)?~~
 5. Money 반올림?
-6. __equals()__
+6. ~~equals()~~
 7. hashCode()
+8. Equal null
+9. Equal object
