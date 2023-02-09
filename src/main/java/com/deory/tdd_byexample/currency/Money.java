@@ -8,8 +8,9 @@ public abstract class Money {
     
     @Override
     public boolean equals(Object object) {
-        Money money = (Money) object;
-        return amount == money.amount;
+        return getClass().equals(object.getClass())
+                && amount == ((Money) object).amount;
+                
     }
     
 }
