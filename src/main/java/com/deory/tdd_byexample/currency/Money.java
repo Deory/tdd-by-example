@@ -18,7 +18,11 @@ public class Money {
     public boolean equals(Object object) {
         return getClass().equals(object.getClass())
                 && amount == ((Money) object).amount;
-                
+    }
+    
+    @Override
+    public String toString() {
+        return amount + " " + currency;
     }
     
     static Dollar dollar(int amount) {
