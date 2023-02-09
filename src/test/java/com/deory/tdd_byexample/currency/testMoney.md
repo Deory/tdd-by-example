@@ -9,3 +9,4 @@ Money Test
 7. hashCode()
 8. Equal null
 9. Equal object
+10. ~~5 CHF * 2 = 10 CHF (1. 을 위한 작은 발걸음)~~
