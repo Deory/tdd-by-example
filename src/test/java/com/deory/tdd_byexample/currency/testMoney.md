@@ -10,3 +10,6 @@ Money Test
 8. Equal null
 9. Equal object
 10. ~~5 CHF * 2 = 10 CHF (1. 을 위한 작은 발걸음)~~
+11. Dollar/Franc 중복
+12. ~~공용 equals~~
+13. 공용 times
