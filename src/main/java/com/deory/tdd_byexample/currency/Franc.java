@@ -2,6 +2,8 @@ package com.deory.tdd_byexample.currency;
 
 public class Franc extends Money {
     
+    private String currency = "CHF";
+    
     Franc(int amount) {
         this.amount = amount;
     }
@@ -11,6 +13,6 @@ public class Franc extends Money {
     }
     
     String currency() {
-        return "CHF";
+        return currency;
     }
 }
