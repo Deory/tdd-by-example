@@ -1,6 +1,6 @@
 package com.deory.tdd_byexample.currency;
 
-public abstract class Money {
+public class Money {
     
     protected int amount;
     protected String currency;
@@ -10,13 +10,20 @@ public abstract class Money {
         this.currency = currency;
     }
     
-    abstract Money times(int multiplication);
+    Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
+    }
     
     @Override
     public boolean equals(Object object) {
-        return getClass().equals(object.getClass())
-                && amount == ((Money) object).amount;
-                
+        return object instanceof Money
+                && amount == ((Money) object).amount
+                && currency.equals(((Money) object).currency);
+    }
+    
+    @Override
+    public String toString() {
+        return amount + " " + currency;
     }
     
     static Dollar dollar(int amount) {
