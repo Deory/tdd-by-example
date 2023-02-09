@@ -11,6 +11,6 @@ public class Dollar extends Money {
     }
 
     String currency() {
-        return null;
+        return "USD";
     }
 }
