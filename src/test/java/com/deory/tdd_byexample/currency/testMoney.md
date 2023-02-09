@@ -12,7 +12,7 @@ Money Test
 10. ~~5 CHF * 2 = 10 CHF (1. 을 위한 작은 발걸음)~~
 11. ~~Dollar/Franc 중복~~
 12. ~~공용 equals~~
-13. 공용 times
+13. __공용 times__
 14. ~~Franc 과 Dollar 비교하기~~
 15. ~~통화?~~
 16. testFrnacMultiplication 제거
