@@ -3,6 +3,7 @@ package com.deory.tdd_byexample.currency;
 public abstract class Money {
     
     protected int amount;
+    protected String currency;
     
     abstract Money times(int multiplication);
     

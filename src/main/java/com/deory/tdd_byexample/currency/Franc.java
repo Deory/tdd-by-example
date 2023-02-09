@@ -2,10 +2,9 @@ package com.deory.tdd_byexample.currency;
 
 public class Franc extends Money {
     
-    private String currency = "CHF";
-    
     Franc(int amount) {
         this.amount = amount;
+        currency = "CHF";
     }
     
     Money times(int multiplication) {
