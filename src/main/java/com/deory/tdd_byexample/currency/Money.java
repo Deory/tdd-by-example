@@ -22,4 +22,8 @@ public abstract class Money {
         return new Franc(amount);
     }
     
+    String currency() {
+        return currency;
+    }
+    
 }

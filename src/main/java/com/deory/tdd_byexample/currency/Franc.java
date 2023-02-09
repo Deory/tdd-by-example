@@ -11,7 +11,4 @@ public class Franc extends Money {
         return new Franc(amount * multiplication);
     }
     
-    String currency() {
-        return currency;
-    }
 }
