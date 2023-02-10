@@ -10,9 +10,9 @@ Money Test
 8. Equal null
 9. Equal object
 10. ~~5 CHF * 2 = 10 CHF (1. 을 위한 작은 발걸음)~~
-11. __Dollar/Franc 중복__
+11. ~~Dollar/Franc 중복~~
 12. ~~공용 equals~~
 13. ~~공용 times~~
 14. ~~Franc 과 Dollar 비교하기~~
 15. ~~통화?~~
-16. __testFrancMultiplication 제거__
+16. ~~testFrancMultiplication 제거~~
