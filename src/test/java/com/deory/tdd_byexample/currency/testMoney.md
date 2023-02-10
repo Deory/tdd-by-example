@@ -15,4 +15,4 @@ Money Test
 13. ~~공용 times~~
 14. ~~Franc 과 Dollar 비교하기~~
 15. ~~통화?~~
-16. testFrnacMultiplication 제거
+16. ~~testFrancMultiplication 제거~~
