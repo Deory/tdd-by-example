@@ -28,6 +28,14 @@ public class testMoney {
     }
     
     @Test
+    public void testHashCode() {
+        assertEquals(Money.dollar(5).hashCode(), Money.dollar(5).hashCode());
+        assertNotEquals(Money.dollar(5).hashCode(), Money.dollar(6).hashCode());
+        assertNotEquals(Money.dollar(5).hashCode(), Money.franc(5).hashCode());
+        assertNotEquals(Money.franc(5).hashCode(), Money.franc(6).hashCode());
+    }
+    
+    @Test
     public void testCurrency() {
         assertEquals("USD", Money.dollar(1).currency());
         assertEquals("CHF", Money.franc(1).currency());
