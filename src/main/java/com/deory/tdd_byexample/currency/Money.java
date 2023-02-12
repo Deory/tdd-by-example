@@ -1,5 +1,7 @@
 package com.deory.tdd_byexample.currency;
 
+import java.util.Objects;
+
 public class Money {
     
     protected int amount;
@@ -19,6 +21,11 @@ public class Money {
         return object instanceof Money
                 && amount == ((Money) object).amount
                 && currency.equals(((Money) object).currency);
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(amount, currency);
     }
     
     @Override
