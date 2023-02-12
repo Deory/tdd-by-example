@@ -2,7 +2,7 @@ package com.deory.tdd_byexample.currency;
 
 import java.util.Objects;
 
-public class Money {
+public class Money implements Expression {
     
     protected int amount;
     protected String currency;
@@ -45,7 +45,7 @@ public class Money {
         return currency;
     }
     
-    Money plus(Money added) {
+    Expression plus(Money added) {
         return new Money(amount + added.amount, currency);
     }
     
