@@ -4,7 +4,7 @@ Money Test
 2. ~~5 USD * 2 = 10 USD~~
 3. ~~amount 를 private 으로 변경~~
 4. ~~Dollar 부작용(side effect)?~~
-5. Money 반올림?
+5. ~~Money 반올림?~~
 6. ~~equals()~~
 7. ~~hashCode()~~
 8. ~~Equal null~~
