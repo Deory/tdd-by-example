@@ -3,8 +3,13 @@ package com.deory.tdd_byexample.currency;
 public class Bank {
     
     Money reduce(Expression source, String to) {
-        Sum sum = (Sum) source;
-        return sum.reduce(to);
+        if (source instanceof Money) {
+            return (Money) source;
+        }
+        else {
+            Sum sum = (Sum) source;
+            return sum.reduce(to);
+        }
     }
     
 }

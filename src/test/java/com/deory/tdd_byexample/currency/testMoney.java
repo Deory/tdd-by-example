@@ -66,4 +66,11 @@ public class testMoney {
         Money reduced = bank.reduce(sum, "USD");
         assertEquals(Money.dollar(7), reduced);
     }
+    
+    @Test
+    public void testReduceMoney() {
+        Bank bank = new Bank();
+        Money reduced = bank.reduce(Money.dollar(5), "USD");
+        assertEquals(Money.dollar(5), reduced);
+    }
 }
