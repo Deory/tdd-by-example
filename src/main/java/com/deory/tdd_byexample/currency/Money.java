@@ -18,6 +18,7 @@ public class Money implements Expression {
     
     @Override
     public boolean equals(Object object) {
+        if (this == object) return true;
         return object instanceof Money
                 && amount == ((Money) object).amount
                 && currency.equals(((Money) object).currency);
