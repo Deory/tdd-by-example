@@ -2,10 +2,10 @@ package com.deory.tdd_byexample.currency;
 
 public class Sum implements Expression {
     
-    Money augend;
-    Money addend;
+    Expression augend;
+    Expression addend;
     
-    Sum(Money augend, Money addend) {
+    Sum(Expression augend, Expression addend) {
         this.augend = augend;
         this.addend = addend;
     }
@@ -15,4 +15,7 @@ public class Sum implements Expression {
         return new Money(amount, to);
     }
     
+    public Expression plus(Expression addend) {
+        return null;
+    }
 }

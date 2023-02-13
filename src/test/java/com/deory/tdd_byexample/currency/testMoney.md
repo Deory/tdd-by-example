@@ -6,3 +6,5 @@ Money Test
 4. ~~Bank.reduce(Money)~~
 5. ~~Money 에 대한 통화 변환을 수행하는 Reduce__~~
 6. ~~Reduce(Bank, String)~~
+7. Sum.plus()
+8. Expression.times()
