@@ -18,6 +18,7 @@ public class Money implements Expression {
     
     @Override
     public boolean equals(Object object) {
+        if (this == object) return true;
         return object instanceof Money
                 && amount == ((Money) object).amount
                 && currency.equals(((Money) object).currency);
@@ -49,8 +50,9 @@ public class Money implements Expression {
         return new Sum(this, addend);
     }
     
-    public Money reduce(String to) {
-        return this;
+    public Money reduce(Bank bank, String to) {
+        int rate = bank.rate(currency, to);
+        return new Money(amount / rate, "USD");
     }
     
 }
